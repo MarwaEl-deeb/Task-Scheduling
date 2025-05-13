@@ -1,0 +1,223 @@
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 20px;
+     background-color: #191921;
+ }
+
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ th {
+     color: rgb(190, 188, 188)
+ }
+
+ h1 {
+     color: white;
+     text-align: center;
+     margin-top: 20px;
+ }
+
+ h3 {
+     font-weight: bold;
+     margin-bottom: 20px;
+ }
+
+ .container {
+     display: flex;
+     gap: 40px;
+     max-width: 1200px;
+     margin: 0 auto;
+     margin-top: 40px;
+ }
+
+ .input-section,
+ .result-section {
+     flex: 1;
+     padding: 20px;
+     border: 2px solid #dddddd2b;
+     border-radius: 8px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ select {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 20px;
+     border: .5px solid #dddddd2b;
+     background-color: rgba(54, 53, 62, 0.077);
+     border-radius: 4px;
+     color: rgb(164, 161, 161);
+ }
+
+ #algorithm-select {
+     background-color: rgb(33, 33, 33);
+ }
+
+ .time-quantum {
+     display: none;
+     background-color: rgba(33, 33, 33, 0.274);
+     margin-bottom: 20px;
+     color: rgb(190, 188, 188);
+     font-size: 15px;
+ }
+
+ .time-quantum input {
+     background-color: rgba(33, 33, 33, 0.274);
+     color: #ddd;
+     border: .5px solid #dddddd2b;
+     font-size: 14px;
+     width: 100%;
+     padding: 8px;
+     border-radius: 4px;
+ }
+
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-bottom: 20px;
+ }
+
+ th,
+ td {
+     padding: 12px;
+     text-align: left;
+     border: 2px solid #dddddd2b;
+     font-size: 16px
+ }
+
+ tbody {
+     color: white
+ }
+
+
+ .buttons {
+     display: flex;
+     gap: 10px;
+ }
+
+ button {
+     cursor: pointer;
+     background: none;
+     color: white;
+     border: 2px solid #dddddd2b;
+     background-color: rgb(33, 33, 33);
+     border-radius: 5px;
+     padding: 10px
+ }
+
+ button:hover {
+     background-color: rgba(35, 35, 35, 0.4);
+ }
+
+ .add-btn {
+     padding: 10px 20px;
+
+ }
+
+ .modal {
+     display: none;
+     position: absolute;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.458);
+ }
+
+ .modal-content {
+     background-color: #191921;
+     color: rgb(164, 161, 161);
+     margin: 15% auto;
+     padding: 20px;
+     border-radius: 8px;
+     width: 450px;
+     max-width: 90%;
+     position: fixed;
+     top: 47%;
+     left: 53%;
+     transform: translate(-60%, -90%);
+ }
+
+ .modal-content input {
+     background-color: rgba(33, 33, 33, 0.274);
+     color: #ddd
+ }
+
+ .close {
+     background-color: rgba(54, 53, 62, 0.077);
+     position: absolute;
+     right: 20px;
+     top: 10px;
+     font-size: 24px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+
+ .form-group {
+     margin-bottom: 15px;
+ }
+
+ .form-group label {
+     display: block;
+     margin-bottom: 5px;
+ }
+
+ .form-group input {
+     width: 100%;
+     padding: 8px;
+     border: 1px solid #dddddd8a;
+     border-radius: 4px;
+ }
+
+ /* Gantt Chart */
+ .gantt-chart {
+     display: flex;
+     margin-top: 20px;
+     border: 1px solid #dddddd5e;
+     border-radius: 5px;
+     overflow-x: auto;
+     flex: wrap;
+
+
+ }
+
+ /* Style for the Gantt chart gap (Idle time) */
+ .gantt-gap {
+     background-color: rgba(147, 147, 147, 0.373);
+     border-right: 1px dashed #dddddd5e;
+     color: #dddddd;
+     text-align: center;
+     font-size: 20px;
+     padding: 5px;
+     font-style: bold;
+ }
+
+ /* Style for the processes */
+ .gantt-process {
+     background-color: rgba(147, 147, 147, 0.373);
+     padding: 10px;
+     text-align: center;
+     color: white;
+     border-right: 1px solid #dddddd5e;
+ }
+
+ .gantt-times {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 10px;
+ }
+
+ .gantt-time {
+     font-size: 12px;
+     color: white;
+ }
+
+ #submit-btn:disabled {
+     background-color: #3e3d3d98;
+     cursor: not-allowed;
+ }
